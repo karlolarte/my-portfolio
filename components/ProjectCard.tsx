@@ -11,11 +11,11 @@ type ProjectCardType = {
 
 const ProjectCard = ({ src, title, description, stack }: ProjectCardType) => {
   return (
-    <Card className="mx-5 flex flex-row overflow-hidden transition-all duration-200 hover:scale-105 md:mx-0 md:basis-1/3 md:flex-col">
-      <div className="relative flex h-30 w-1/2 md:w-full">
+    <Card className="mx-5 flex flex-row gap-0 overflow-hidden p-0 transition-all duration-200 hover:scale-105 md:mx-0 md:basis-1/3 md:flex-col md:py-6">
+      <div className="relative flex h-30 w-1/4 md:w-full">
         <Image src={src} alt="Project preview" fill className="object-contain" />
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="itemc flex flex-1 flex-col justify-center gap-2">
         <CardHeader>
           <CardTitle className="text-sm md:text-xl">{title}</CardTitle>
           <CardDescription className="md:text-md text-md">{description}</CardDescription>

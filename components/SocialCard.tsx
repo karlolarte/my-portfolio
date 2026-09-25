@@ -16,7 +16,7 @@ const SocialCard = ({ name, username, href, icon }: SocialCardProps) => {
       rel="noopener noreferrer"
       className="group flex basis-1/3 items-center gap-3 rounded-lg border p-4 transition-all duration-200 hover:scale-105 hover:bg-gray-50"
     >
-      <div className="size-10">{icon}</div>
+      <div className="md:size-10">{icon}</div>
 
       <div>
         <p className="text-sm font-medium">{name}</p>

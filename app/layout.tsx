@@ -22,7 +22,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className={`${inter.className} flex min-h-screen`}>
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+      </head>
+      <body className={`${inter.className} flex min-h-screen flex-col md:flex-row`}>
         <Sidebar />
         <main className="flex min-w-0 flex-1 justify-center">{children}</main>
       </body>
